@@ -4,12 +4,19 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./style/index.css";
 
 // pages
-import { Index as Mainpage } from "./pages/main/Index";
+import MainPage from "./pages/MainPage";
+import PostingContentsPage from "./pages/PostingContentsPage";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Mainpage />,
+        element: <MainPage />,
+        children: [
+            {
+                path: "post/:id",
+                element: <PostingContentsPage />,
+            },
+        ],
     },
 ]);
 
