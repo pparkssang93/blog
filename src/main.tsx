@@ -13,7 +13,7 @@ const router = createBrowserRouter([
         element: <MainPage />,
         children: [
             {
-                path: "post/:id",
+                path: "posts/:id",
                 element: <PostingContentsPage />,
             },
         ],
