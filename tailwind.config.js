@@ -7,5 +7,5 @@ export default {
             eng: ["MinSansVF", "sans-serif"],
         },
     },
-    plugins: [],
+    plugins: [require("@tailwindcss/typography")],
 };
