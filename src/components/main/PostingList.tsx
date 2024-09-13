@@ -10,7 +10,7 @@ function PostingList() {
     return (
         <div
             id="posting_list-wrapper"
-            className="border rounded-md grow-[1] px-4 bg-white min-h-[819px] min-w-[273px] max-w-[273px]"
+            className="border rounded-md grow-[1] p-6 bg-white min-h-[819px] max-h-[819px] min-w-[273px] max-w-[273px] overflow-y-scroll hide-scrollbar"
         >
             {root.childIds.map((ele) => (
                 <MainCategory key={ele} id={ele} data={postingListData} />
