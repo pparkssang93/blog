@@ -1,14 +1,22 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./style/index.css";
 
 // pages
-import { Index as Mainpage } from "./pages/main/Index";
+import MainPage from "./pages/MainPage";
+import PostingContentsPage from "./pages/PostingContentsPage";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Mainpage />,
+        element: <MainPage />,
+        children: [
+            {
+                path: "posts/:id",
+                element: <PostingContentsPage />,
+            },
+        ],
     },
 ]);
 

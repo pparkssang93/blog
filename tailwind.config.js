@@ -2,6 +2,10 @@
 
 export default {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-    theme: {},
-    plugins: [],
+    theme: {
+        fontFamily: {
+            eng: ["MinSansVF", "sans-serif"],
+        },
+    },
+    plugins: [require("@tailwindcss/typography")],
 };
