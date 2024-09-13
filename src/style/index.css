@@ -26,3 +26,55 @@ li {
 .hide-scrollbar::-webkit-scrollbar {
     display: none; /* Chrome, Safari, and Opera */
 }
+
+pre {
+    font-size: 0.8em;
+}
+
+code {
+    white-space: pre-wrap !important; /* 줄바꿈 허용 */
+}
+
+.hljs-tag {
+    color: #89b6e1;
+}
+
+.hljs-keyword {
+    color: #89b6e1;
+}
+
+.hljs-string {
+    color: #7fb982;
+}
+
+.hljs-function {
+    color: #dad085;
+}
+
+.hljs-function.hljs-title {
+    color: #e06c75;
+}
+
+.hljs-function.hljs-params {
+    color: inherit;
+}
+
+.hljs-name {
+    color: #e06c75;
+}
+
+.xml {
+    color: inherit;
+}
+
+.xml.hljs-tag {
+    color: #89b6e1;
+}
+
+.xml.hljs-tag.hljs-name {
+    color: #e06c75;
+}
+
+.xml.hljs-tag.hljs-attr {
+    color: #daa26f;
+}
